@@ -32,27 +32,16 @@ window.addEventListener('keydown', function(e) {
 })
 
 buttonsToScreen.forEach((button) => {
-button.addEventListener('click', function(e) {
-        clickOrKeyNum(e)
-        });   
+button.addEventListener('click', clickOrKeyNum);   
     })
 buttonsOperands.forEach((button) => {
-    button.addEventListener('click', function(e) {
-        clickOrKeyOperand(e)
-    })
+    button.addEventListener('click', clickOrKeyOperand)
 }) 
-delbtn.addEventListener('click', function(e) {
-    clickORkeyDEL(e)
-})
-dot.addEventListener('click',function(e) {
-    clickORkeyDot(e)
-});
-clearBtn.addEventListener('click', function(e) {
-    clickOrKeyESC(e);
-})
-equals.addEventListener('click', function(e) {
-    clickORkeyEquals(e)
-});
+delbtn.addEventListener('click', clickORkeyDEL);
+dot.addEventListener('click', clickORkeyDot);
+clearBtn.addEventListener('click', clickOrKeyESC);
+equals.addEventListener('click', clickORkeyEquals);
+
 function clickOrKeyESC(e) {
     if(e.type == "keydown" && e.key == 'Escape') {
         resetScreen()
