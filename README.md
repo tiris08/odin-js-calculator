@@ -1,2 +1,4 @@
 # odin-project-calculator
-My first project where i`ve been able to implement my basic knowlege of HTML CSS and Javascript
+My first project using HTML CSS and Javascript
+
+https://tiris08.github.io/odin-project-calculator/
